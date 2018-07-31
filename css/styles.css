@@ -1,0 +1,18 @@
+body {
+    padding: 10px;
+}
+.button {
+    border-radius: 100%;
+    border: 2px solid salmon;
+    margin: 0 auto;
+    display: block;
+    max-width: 500px;
+}
+
+.counter {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
