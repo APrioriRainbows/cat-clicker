@@ -3,6 +3,58 @@ let catBox = document.getElementById('cat-box');
 let activeCatArea = document.getElementById('clicked-cat');
 let cats = [];
 
+function createElement(type,parent_selector,id,) {
+    const el = document.createElement(type)
+    el.setAttribute("id",id)
+    const parent = document.querySelector(parent_selector)
+    parent.appendChild(el)
+    return el
+}
+
+const listView = {
+    init: () => {
+
+    },
+    render: () => {
+
+    }
+}
+
+const catView = {
+    init: () => {
+
+    },
+    render: () => {
+
+    }
+}
+
+const editView = { // edit cat names & image
+    init: () => {},
+    render: () => {},// call once
+    save: () => {
+	// change cat
+	// alert "SAVED!"
+	// redirect to listView
+    },
+}
+
+function init() {
+    // create all dom elements
+
+    // bind 
+
+}
+
+function render() {
+
+}
+
+//switch current cat function
+//increase count
+
+
+
 class Cat {
     constructor(name, pic){
 	this.name = name;
@@ -26,6 +78,9 @@ class Cat {
 	})
 				 
     }
+    select() {
+	document.gEBI("cat-name").innerText = this.name
+    }
 }
 
 let Sheila = new Cat('Sheila','img/cat.jpg');
@@ -39,3 +94,15 @@ cats.push(Cooper);
 cats.push(Cordelia);
 cats.push(KittyCat);
 
+window.onload = function() {
+    listView.init()
+    catView.init()
+    formView.init()
+
+    [listView,catView,formView].map(function(view) {
+	return view.init()
+    })
+
+    [listView,catView,formView].forEach(view => view.init())
+
+}
