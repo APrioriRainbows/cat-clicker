@@ -1,18 +1,56 @@
 body {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+div {
+    width: 100%;
+}
+.all-cats {
+    border: 2px solid green;
+    padding: 5%;
+    margin: 2%;
+    display: flex;
+    align-items: space-around;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.clicked-cat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    font-size: 2em;
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 100%;
+        background-color: background: -moz-linear-gradient(90deg, #F9CADA 0%, #FFF7EB 88%, #FFF7EB 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFF7EB), color-stop(12%, #FFF7EB), color-stop(100%, #F9CADA)); /* safari4+,chrome */
+    background: -webkit-linear-gradient(90deg, #F9CADA 0%, #FFF7EB 88%, #FFF7EB 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(90deg, #F9CADA 0%, #FFF7EB 88%, #FFF7EB 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(90deg, #F9CADA 0%, #FFF7EB 88%, #FFF7EB 100%); /* ie10+ */
+    background: linear-gradient(0deg, #F9CADA 0%, #FFF7EB 88%, #FFF7EB 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFF7EB', endColorstr='#F9CADA',GradientType=0 ); /* ie6-9 */
+
+}
+
 .button {
-    border-radius: 100%;
+    border-radius: 80%;
     border: 2px solid salmon;
     margin: 0 auto;
     display: block;
-    max-width: 500px;
+    max-width: 300px;
 }
 
-.counter {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 2em;
-/*    font-family: 'Montserrat Alternates', sans-serif;*/
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
 }
